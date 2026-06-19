@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bella Notte | Fine Italian Dining</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">Bella Notte</div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#reservation" class="nav-cta">Reserve a Table</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Est. 2008 · Rome–Inspired</span>
+      <h1>Where Every Meal<br /><em>Tells a Story</em></h1>
+      <p>Handcrafted pasta, wood-fired flavours, and a warm table waiting for you.</p>
+      <div class="hero-actions">
+        <a href="#reservation" class="btn btn-primary">Reserve a Table</a>
+        <a href="#menu" class="btn btn-outline">View Menu</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <section class="stats-strip">
+    <div class="stat"><span class="stat-num" data-target="16">0</span><span class="stat-label">Years of Excellence</span></div>
+    <div class="stat"><span class="stat-num" data-target="48">0</span><span class="stat-label">Signature Dishes</span></div>
+    <div class="stat"><span class="stat-num" data-target="12000">0</span><span class="stat-label">Happy Guests</span></div>
+    <div class="stat"><span class="stat-num" data-target="5">0</span><span class="stat-label">Awards Won</span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-images">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&q=80" alt="Restaurant interior" class="about-img-main" />
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=300&q=80" alt="Italian food" class="about-img-accent" />
+      </div>
+      <div class="about-text">
+        <span class="section-eyebrow">Our Story</span>
+        <h2>A Kitchen Built on <em>Tradition</em></h2>
+        <p>Bella Notte was born from a single obsession: recreating the honest, soul-warming food of Italian grandmothers. Every recipe is a love letter to the region it comes from — the rolling hills of Tuscany, the sun-drenched coasts of Amalfi, the bustling piazzas of Rome.</p>
+        <p>Our chef Marco Esposito trained in Naples for seven years before bringing his craft here. Everything is made fresh daily — pasta rolled by hand, sauces simmered for hours, bread baked each morning.</p>
+        <ul class="about-values">
+          <li><i class="fas fa-leaf"></i> Locally sourced ingredients</li>
+          <li><i class="fas fa-fire"></i> Wood-fired oven, authentic flavour</li>
+          <li><i class="fas fa-heart"></i> Family recipes, passed down for generations</li>
+        </ul>
+        <a href="#reservation" class="btn btn-primary">Book Your Experience</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu-section section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Our Menu</span>
+        <h2>Crafted with <em>Passion</em></h2>
+        <p>Every dish is prepared to order. Allergies? Just ask — we'll take care of you.</p>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-tab="starters">Starters</button>
+        <button class="tab-btn" data-tab="pasta">Pasta</button>
+        <button class="tab-btn" data-tab="mains">Mains</button>
+        <button class="tab-btn" data-tab="desserts">Desserts</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <!-- Starters -->
+        <div class="menu-items active" data-tab="starters">
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1576577445504-6af96477db52?w=300&q=80" alt="Bruschetta" /></div>
+            <div class="menu-card-body">
+              <div class="menu-card-top"><h3>Bruschetta al Pomodoro</h3><span class="price">$9</span></div>
+              <p>Grilled sourdough, heirloom tomato, fresh basil, aged balsamic</p>
+              <span class="badge">Vegetarian</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1551183053-bf91798d792b?w=300&q=80" alt="Caprese" /></div>
+            <div class="menu-card-body">
+              <div class="menu-card-top"><h3>Caprese Classico</h3><span class="price">$13</span></div>
+              <p>Buffalo mozzarella, vine-ripened tomatoes, fresh basil oil</p>
+              <span class="badge">Chef's Pick</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=300&q=80" alt="Arancini" /></div>
+            <div class="menu-card-body">
+              <div class="menu-card-top"><h3>Arancini Siciliani</h3><span class="price">$11</span></div>
+              <p>Crispy risotto balls, truffle aioli, parmesan, saffron</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&q=80" alt="Salad" /></div>
+            <div class="menu-card-body">
+              <div class="menu-card-top"><h3>Insalata della Casa</h3><span class="price">$10</span></div>
+              <p>Seasonal greens, shaved fennel, orange segments, lemon vinaigrette</p>
+              <span class="badge">Vegetarian</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pasta -->
+        <div class="menu-items" data-tab="pasta">
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=300&q=80" alt="Carbonara" /></div>
+            <div class="menu-card-body">
+              <div class="menu-card-top"><h3>Spaghetti Carbonara</h3><span class="price">$22</span></div>
+              <p>Guanciale, egg yolk, Pecorino Romano, cracked black pepper</p>
+              <span class="badge">Classic</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=300&q=80" alt="Pappardelle" /></div>
+            <div class="menu-card-body">
+              <div class="menu-card-top"><h3>Pappardelle al Ragù</h3><span class="price">$26</span></div>
+              <p>Hand-rolled pappardelle, slow-braised beef ragù, gremolata</p>
+              <span class="badge">Chef's Pick</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=300&q=80" alt="Risotto" /></div>
+            <div class="menu-card-body">
+              <div class="menu-card-top"><h3>Risotto ai Funghi</h3><span class="price">$24</span></div>
+              <p>Wild mushroom, truffle oil, mascarpone, aged Parmigiano</p>
+              <span class="badge">Vegetarian</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=300&q=80" alt="Pasta" /></div>
+            <div class="menu-card-body">
+              <div class="menu-card-top"><h3>Tagliatelle Frutti di Mare</h3><span class="price">$29</span></div>
+              <p>Fresh tagliatelle, prawns, mussels, clams, cherry tomato, white wine</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mains -->
+        <div class="menu-items" data-tab="mains">
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300&q=80" alt="Steak" /></div>
+            <div class="menu-card-body">
+              <div class="menu-card-top"><h3>Bistecca Fiorentina</h3><span class="price">$52</span></div>
+              <p>T-bone steak, rosemary, garlic butter, roasted potatoes</p>
+              <span class="badge">Signature</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=300&q=80" alt="Salmon" /></div>
+            <div class="menu-card-body">
+              <div class="menu-card-top"><h3>Branzino al Forno</h3><span class="price">$38</span></div>
+              <p>Whole sea bass, lemon, capers, olives, roasted fennel</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=300&q=80" alt="Chicken" /></div>
+            <div class="menu-card-body">
+              <div class="menu-card-top"><h3>Pollo alla Romana</h3><span class="price">$34</span></div>
+              <p>Roast chicken, peppers, olives, white wine, salvia</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=300&q=80" alt="Pizza" /></div>
+            <div class="menu-card-body">
+              <div class="menu-card-top"><h3>Pizza Margherita DOC</h3><span class="price">$21</span></div>
+              <p>San Marzano tomato, fior di latte, fresh basil, wood-fired</p>
+              <span class="badge">Vegetarian</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-items" data-tab="desserts">
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=300&q=80" alt="Tiramisu" /></div>
+            <div class="menu-card-body">
+              <div class="menu-card-top"><h3>Tiramisù della Nonna</h3><span class="price">$12</span></div>
+              <p>Ladyfingers, mascarpone, espresso, dark cocoa — made daily</p>
+              <span class="badge">Signature</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=300&q=80" alt="Panna Cotta" /></div>
+            <div class="menu-card-body">
+              <div class="menu-card-top"><h3>Panna Cotta ai Frutti</h3><span class="price">$10</span></div>
+              <p>Vanilla panna cotta, seasonal berry coulis, mint</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1516559228935-8e09ced67280?w=300&q=80" alt="Gelato" /></div>
+            <div class="menu-card-body">
+              <div class="menu-card-top"><h3>Gelato Artigianale</h3><span class="price">$9</span></div>
+              <p>Three scoops of house-made gelato — ask your server for today's flavours</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=300&q=80" alt="Cannoli" /></div>
+            <div class="menu-card-body">
+              <div class="menu-card-top"><h3>Cannoli Siciliani</h3><span class="price">$11</span></div>
+              <p>Crispy pastry shells, ricotta, candied orange, pistachio</p>
+              <span class="badge">Chef's Pick</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Gallery</span>
+        <h2>A Feast for the <em>Eyes</em></h2>
+      </div>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Restaurant ambiance" class="gallery-tall" />
+        <img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=400&q=80" alt="Pasta dish" />
+        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&q=80" alt="Pizza" />
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80" alt="Chef cooking" />
+        <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&q=80" alt="Dessert" />
+        <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=300&q=80" alt="Caprese" />
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Reviews</span>
+        <h2>What Our Guests <em>Say</em></h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"The best carbonara outside of Rome. The atmosphere, the service, the wine — everything was perfect. We will be back."</p>
+          <div class="reviewer"><img src="https://i.pravatar.cc/50?img=5" alt="Guest" /><span>Sarah M. — Google Review</span></div>
+        </div>
+        <div class="review-card featured">
+          <div class="stars">★★★★★</div>
+          <p>"Bella Notte made our anniversary unforgettable. Chef Marco came out to greet us personally. The truffle risotto is divine — I still dream about it."</p>
+          <div class="reviewer"><img src="https://i.pravatar.cc/50?img=12" alt="Guest" /><span>James & Priya — TripAdvisor</span></div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"I've tried Italian restaurants on three continents. Bella Notte is in my top five. The pasta is hand-rolled, the bread is baked fresh — you can taste the care."</p>
+          <div class="reviewer"><img src="https://i.pravatar.cc/50?img=22" alt="Guest" /><span>Lena K. — Yelp</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section class="reservation section" id="reservation">
+    <div class="container reservation-grid">
+      <div class="reservation-info">
+        <span class="section-eyebrow">Reserve a Table</span>
+        <h2>Join Us for <em>Dinner</em></h2>
+        <p>We'd love to host you. Fill in the form and we'll confirm your reservation within 2 hours.</p>
+        <ul class="hours-list">
+          <li><strong>Mon – Thu</strong><span>5:00 PM – 10:00 PM</span></li>
+          <li><strong>Fri – Sat</strong><span>12:00 PM – 11:00 PM</span></li>
+          <li><strong>Sunday</strong><span>12:00 PM – 9:00 PM</span></li>
+        </ul>
+        <div class="contact-quick">
+          <a href="tel:+15551234567"><i class="fas fa-phone"></i> +1 (555) 123-4567</a>
+          <a href="mailto:hello@bellanotte.com"><i class="fas fa-envelope"></i> hello@bellanotte.com</a>
+        </div>
+      </div>
+      <form class="reservation-form" id="reservationForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="Maria" required />
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Rossi" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" placeholder="+1 555 000 0000" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" id="date" required />
+          </div>
+          <div class="form-group">
+            <label for="time">Time</label>
+            <select id="time" required>
+              <option value="">Select time</option>
+              <option>5:00 PM</option><option>5:30 PM</option>
+              <option>6:00 PM</option><option>6:30 PM</option>
+              <option>7:00 PM</option><option>7:30 PM</option>
+              <option>8:00 PM</option><option>8:30 PM</option>
+              <option>9:00 PM</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="guests">Number of Guests</label>
+          <select id="guests" required>
+            <option value="">Select guests</option>
+            <option>1 guest</option><option>2 guests</option>
+            <option>3 guests</option><option>4 guests</option>
+            <option>5 guests</option><option>6+ guests (call us)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="notes">Special Requests (optional)</label>
+          <textarea id="notes" rows="3" placeholder="Dietary requirements, anniversary, high chair…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Confirm Reservation</button>
+        <p class="form-note">We'll confirm via email within 2 hours.</p>
+        <div class="form-success" id="formSuccess">
+          <i class="fas fa-check-circle"></i>
+          <span>Reservation received! We'll be in touch shortly.</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACT / MAP -->
+  <section class="contact section" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <span class="section-eyebrow">Find Us</span>
+        <h2>Come <em>Visit</em></h2>
+        <div class="contact-details">
+          <div><i class="fas fa-map-marker-alt"></i><span>123 Olive Grove Avenue<br/>New York, NY 10001</span></div>
+          <div><i class="fas fa-phone"></i><a href="tel:+15551234567">+1 (555) 123-4567</a></div>
+          <div><i class="fas fa-envelope"></i><a href="mailto:hello@bellanotte.com">hello@bellanotte.com</a></div>
+          <div><i class="fab fa-instagram"></i><a href="#">@bellanotte_nyc</a></div>
+        </div>
+      </div>
+      <div class="map-placeholder">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095919823!2d-74.0059731848042!3d40.71277827933085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1573585947283!5m2!1sen!2sus"
+          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Restaurant Location">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">Bella Notte</div>
+        <p>Handcrafted Italian cuisine,<br/>made with love since 2008.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <ul class="hours-list-footer">
+          <li>Mon–Thu: 5 PM – 10 PM</li>
+          <li>Fri–Sat: 12 PM – 11 PM</li>
+          <li>Sunday: 12 PM – 9 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Bella Notte Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
